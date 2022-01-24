@@ -19,9 +19,9 @@ Prev
     <button onclick="renderPage.navigateLast()" id="last"> 
         Last
     </button>
-    <select id="select">
-        <option onclick="renderPage.changePageSize(5)" id="option1">5</option>
-        <option onclick="renderPage.changePageSize(10)" id="option2">10</option>
+    <select onchange="renderPage.changePageSize(this.value)"  id="select">
+        <option value="5" id="option1">5</option>
+        <option value="10" id="option2">10</option>
     </select>
 </div>
 <script>

@@ -29,7 +29,7 @@ const List = function(element, listItems){
 		row_1.appendChild(header_2);
 		row_1.appendChild(header_3);
 	   thead.appendChild(row_1);
-		for(i=0;i<5;i++){
+		for(i=0;i<this.pageSize;i++){
 			if((i+this.pageSize*this.currentPage)>=listItems.length)
 			{
 				break;
@@ -61,15 +61,27 @@ const List = function(element, listItems){
 		this.render();
 	};
 	this.navigatePrev = function(){
+		if(this.currentPage==0){
+
+		}
+		else{
 		this.currentPage -=1;
 		this.render();
+		}
 	};
 	this.navigateNext = function(){
+		if(this.currentPage>=listItems.length/this.pageSize){
+
+		}
+		else{
 		this.currentPage +=1;
 		this.render();
+		}
 	};
 	this.changePageSize = function(size){
-		this.pageSize = size;
+		console.log("hree");
+		console.log(size);
+		this.pageSize = parseInt(size);
 		this.render();
 	};
 };
