@@ -1,0 +1,116 @@
+<html>
+    
+       <script language="JavaScript" type="text/javascript" src="src.js"></script>
+        <link rel="stylesheet" href="index.css">
+<body>
+<div id="elementId"></div>
+<br/>
+<div id="pagination_button">
+    <button onclick="renderPage.navigateFirst()" id="first">
+        First
+    </button> 
+<button onclick="renderPage.navigatePrev()" id="prev">
+Prev
+</button>
+<button onclick="renderPage.navigateNext()" id="next"> 
+    Next
+</button>
+
+    <button onclick="renderPage.navigateLast()" id="last"> 
+        Last
+    </button>
+    <select id="select">
+        <option onclick="renderPage.changePageSize(5)" id="option1">5</option>
+        <option onclick="renderPage.changePageSize(10)" id="option2">10</option>
+    </select>
+</div>
+<script>
+	const students = [
+    {
+            "id":1,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":2,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":3,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":4,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":5,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":6,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":7,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":8,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":1,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":2,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":3,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":4,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":5,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":6,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":7,
+            "name":"lohit",
+            "roll_number":10
+        },
+        {
+            "id":8,
+            "name":"lohit",
+            "roll_number":10
+        },
+    ];
+    
+	const renderPage = new List("elementId",students);
+    renderPage.render();
+	
+</script>
+</body>
+    </html>
