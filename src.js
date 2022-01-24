@@ -47,7 +47,7 @@ const List = function(element, listItems){
 			row_2.appendChild(body_3);
 		   	tbody.appendChild(row_2);
 		}
-
+		document.getElementById('currentPage').innerHTML = this.currentPage+1;
 		//Code to push page data
                // Here goes your code
 	};
@@ -81,6 +81,7 @@ const List = function(element, listItems){
 	this.changePageSize = function(size){
 		console.log("hree");
 		console.log(size);
+		this.currentPage = 0;
 		this.pageSize = parseInt(size);
 		this.render();
 	};

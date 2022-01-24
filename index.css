@@ -9,7 +9,7 @@ th, td {
 
 
 
-#prev, #next, #first, #last {
+#prev, #next, #first, #last, #currentPage {
     display: inline;
     margin-right: 10px;
 }
